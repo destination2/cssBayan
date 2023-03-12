@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color:beige;
+}
+
 .wrapper {
     margin: 50px auto;
     width: 600px;
@@ -25,7 +29,7 @@
     width: 100%;
     margin-top: 10px;
     padding: 10px;
-    border-top: 1px solid black;
+    border-top: 1px solid gray;
 }
 
 .accordion li label {
@@ -36,7 +40,15 @@
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    color: blue;
+}
+
+.btn {
     color: black;
+}
+
+.accordion li label:hover {
+    color:black;
 }
 
 .accordion label + input[type="radio"] {
@@ -51,6 +63,17 @@
     transition: max-height 0.5s;
 }
 
+.accordion label + input[type="radio"]:checked + label {
+    color: black;
+}
+
 .accordion label + input[type="radio"]:checked + .content {
     max-height: 600px;
+    color: black;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
 }
