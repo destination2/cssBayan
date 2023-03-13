@@ -59,11 +59,13 @@ body:hover .acc_title {
     color: black;
 }
 
-.acc_input:checked + .acc_title + .content {
+.acc_input:checked + .acc_title + .content,
+.acc_input:hover + .acc_title + .content {
     display: flex;
 }
 
-.acc_input:checked + .acc_title {
+.acc_input:checked + .acc_title,
+.acc_input:hover + .acc_title {
     color: black;
 }
 
@@ -71,7 +73,8 @@ body:hover .acc_title {
     display: none;
 }
 
-.acc_input:checked + .acc_title .btn1 {
+.acc_input:checked + .acc_title .btn1,
+.acc_input:hover + .acc_title .btn1 {
     transform: rotate(45deg);
 }
 
